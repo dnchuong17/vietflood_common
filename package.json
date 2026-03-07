@@ -1,10 +1,13 @@
 {
-  "name": "@vietflood/common",
+  "name": "@dnchuong17/vietflood-common",
   "version": "1.0.0",
   "description": "",
   "main": "dist/index.cjs",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "files": [
     "dist"
   ],
@@ -33,6 +36,7 @@
   },
   "dependencies": {
     "@nestjs/common": "^11.1.14",
-    "express": "^5.2.1"
+    "express": "^5.2.1",
+    "ioredis": "^5.10.0"
   }
 }

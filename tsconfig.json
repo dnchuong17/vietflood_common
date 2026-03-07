@@ -8,6 +8,8 @@
     "emitDeclarationOnly": false,
     "esModuleInterop": true,
     "skipLibCheck": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
     "types": ["node", "express"]
   },
   "include": ["src/**/*"]
