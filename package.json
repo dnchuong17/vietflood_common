@@ -1,10 +1,17 @@
 {
   "name": "@dnchuong17/vietflood-common",
-  "version": "1.0.0",
+  "version": "1.4.0",
   "description": "",
-  "main": "dist/index.cjs",
+  "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs"
+    }
+  },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
   },
@@ -30,13 +37,18 @@
   "homepage": "https://github.com/dnchuong17/vietflood_common#readme",
   "devDependencies": {
     "@types/express": "^5.0.6",
-    "@types/node": "^25.3.3",
+    "@types/multer": "^2.1.0",
+    "@types/node": "^25.5.0",
     "tsup": "^8.5.1",
     "typescript": "^5.9.3"
   },
   "dependencies": {
     "@nestjs/common": "^11.1.14",
+    "@nestjs/platform-express": "^11.1.17",
+    "cloudinary": "2.7.0",
     "express": "^5.2.1",
-    "ioredis": "^5.10.0"
+    "ioredis": "^5.10.0",
+    "multer": "^2.1.1",
+    "multer-storage-cloudinary": "^4.0.0"
   }
 }
