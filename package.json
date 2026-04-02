@@ -1,5 +1,5 @@
 {
-  "name": "@dnchuong17/vietflood-common",
+  "name": "vietflood-common",
   "version": "1.4.0",
   "description": "",
   "main": "dist/index.js",
