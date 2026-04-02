@@ -29,7 +29,7 @@ jobs:
         run: npm config get registry
 
       - name: Check token presence
-        run: node -e "console.log(process.env.NPM_TOKEN)"
+        run: node -e "console.log(process.env.NODE_AUTH_TOKEN)"
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
